@@ -6,104 +6,86 @@
   <title>Adebisi Kehinde Marcelina | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-
-  html {
-  scroll-behavior: smooth;
-}
-    * {
-      box-sizing: border-box;
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
       line-height: 1.6;
-      background: #f9f9f9;
-      color: #222;
+      background: #f7f7f6;
+      color: #070700af;
     }
 
     header {
-      background: #7c6a46;
-      color: #fff;
-      padding: 1.5rem 2rem;
-    }
-
-    .project{
-      scroll-behavior: smooth;
-    }
-
-    .header-container {
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
+      background: hsl(41, 23%, 38%);
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     .logo {
-      flex: 1;
-    }
-
-    .img-logo {
-      width: 60px;
-      height: 60px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: none;
-    }
-
-    .profile-text {
-      flex: 2;
-      text-align: center;
-    }
-
-    .profile-text h1 {
-      margin: 0;
-      font-size: 1.5rem;
-    }
-
-    .profile-text p {
-      font-size: 1rem;
-    }
-
-    .header-nav {
-      flex: 1;
       display: flex;
-      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .title {
+      text-align: center;
+      flex: 1;
+    }
+
+    nav {
+      display: flex;
       gap: 1rem;
     }
 
-    .header-nav a {
+    nav a {
       color: #fff;
       text-decoration: none;
       font-weight: bold;
-      transition: opacity 0.2s ease-in-out;
-    }
-
-    .header-nav a:hover {
-      opacity: 0.8;
     }
 
     section {
       padding: 2rem 1rem;
       max-width: 1000px;
       margin: auto;
+      scroll-margin-top: 100px;
     }
 
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+      gap: 1rem;
     }
 
     .project {
-      background: #fff;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      background: #ebdfdf;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
-    .project h3 {
-      margin-top: 0;
+    .login {
+      background: #e0dddd;
+      padding: 1rem;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: auto;
+      text-align: center;
     }
 
     footer {
@@ -114,35 +96,27 @@
       margin-top: 2rem;
     }
 
-    .login {
-      background: #eee;
-      padding: 2rem;
-      border-radius: 10px;
-      text-align: center;
-    }
-
-    .login h2, .login h3 {
-      margin-bottom: 1rem;
-    }
-
-    .login a {
-      color: #7c6a46;
-      text-decoration: none;
-    }
-
-    .login a:hover {
-      text-decoration: underline;
-    }
-
     @media (max-width: 768px) {
-      .header-container {
+      header {
         flex-direction: column;
-        text-align: center;
+        align-items: flex-start;
+        gap: 1rem;
+        background-color: black;
       }
 
-      .header-nav {
-        justify-content: center;
-        margin-top: 1rem;
+      .title {
+        /* text-align: left; */
+        margin:auto;
+      }
+
+      .logo{
+        margin:auto;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        margin:auto;
       }
     }
   </style>
@@ -150,31 +124,24 @@
 <body>
 
   <header>
-    <div class="header-container">
-      <!-- Logo -->
-      <div class="logo">
-        <img src="./image/Profile_pic.png" alt="Logo" class="img-logo" />
-      </div>
-
-      <!-- Profile Text -->
-      <div class="profile-text">
-        <h1>Adebisi Kehinde Marcelina</h1>
-        <p>Web Developer | Designer | Creator</p>
-      </div>
-
-      <!-- Navigation -->
-      <nav class="header-nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#login">Login</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <div class="logo">
+      <img src="./image/Profile_pic.png" alt="Adebisi Kehinde Marcelina">
     </div>
+    <div class="title">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Web Developer | Designer | Creator</p>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#login">Login</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I'm Adebisi Kehinde Marcelina, a final year student of the Department of Library and Information Science at the University of Ilorin. I’m a passionate web developer with a love for clean code and creative design. I specialize in building responsive websites and modern web applications. This website is a showcase of my skills and experiences, and I'm constantly updating it with new content. Take a look around, and I hope you find something that interests you!</p>
+    <p>Hello! I'm Adebisi Kehinde Marcelina, a final-year student of Library and Information Science at the University of Ilorin. I'm passionate about web development and creative design, specializing in responsive websites and modern web apps. I regularly update this portfolio with my latest work—take a look around!</p>
   </section>
 
   <section id="projects">
@@ -186,7 +153,7 @@
       </div>
       <div class="project">
         <h3>ToDo App</h3>
-        <p>A simple task management app built using React and Firebase.</p>
+        <p>A task management app built using React and Firebase.</p>
       </div>
       <div class="project">
         <h3>Weather Dashboard</h3>
@@ -198,17 +165,17 @@
   <section id="login">
     <div class="login">
       <h2>Login</h2>
-      <h3>Username: _________________________________</h3>
-      <h3>Password: _________________________________</h3>
-      <p><a href="#login">Login</a></p>
-      <p>Sign up if you haven't registered yet!</p>
-      <p><a href="#signup">Sign Up</a></p>
+      <p><strong>Username</strong>: ____________________________</p>
+      <p><strong>Password</strong>: ____________________________</p>
+      <a href="#login">Login</a>
+      <p>Sign up if you're not registered!</p>
+      <a href="#signup">Sign up</a>
     </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>You can reach me at <a href="mailto:mercelinaadebisi@gmail.com">mercelinaadebisi@gmail.com</a> or connect with me on <a href="https://linkedin.com">LinkedIn</a>.</p>
+    <p>Email me at <a href="mailto:mercelinaadebisi@gmail.com">mercelinaadebisi@gmail.com</a> or connect on <a href="https://linkedin.com">LinkedIn</a>.</p>
   </section>
 
   <footer>
